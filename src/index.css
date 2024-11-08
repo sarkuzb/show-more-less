@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.long-text {
+  max-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.expanded {
+  max-height: 20rem;
+  opacity: 1;
+}
